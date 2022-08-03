@@ -3,7 +3,7 @@ graph = [[]]
 
 def path_finder(maze):
     lines = maze.split('\n')
-    global graph
+    global graph  #global variable
     graph = [[False] * len(lines) for i in range(len(lines))]
     for y in range(len(lines)):
         for x in range(len(lines)):
